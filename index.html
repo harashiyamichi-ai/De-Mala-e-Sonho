@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mala & Sonho | Planejamento de Viagens</title>
+
+    <meta name="description"
+        content="Transformamos sonhos em experiências inesquecíveis através de um planejamento de viagem completo.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--====================================================
+                        BACKGROUND
+    =====================================================-->
+
+    <div class="background-map"></div>
+
+    <div class="plane-container" aria-hidden="true"></div>
+
+    <div class="route-lines" aria-hidden="true"></div>
+
+    <div class="floating-clouds" aria-hidden="true"></div>
+
+
+    <!--====================================================
+                        HEADER
+    =====================================================-->
+
+    <header id="home">
+
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+
+                <i class="fa-solid fa-plane"></i>
+
+                <span>Mala & Sonho</span>
+
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="#sobre">Quem somos</a></li>
+
+                <li><a href="#servicos">Serviços</a></li>
+
+                <li><a href="#pacotes">Destinos</a></li>
+
+                <li><a href="#feedbacks">Depoimentos</a></li>
+
+                <li><a href="#contato">Contato</a></li>
+
+            </ul>
+
+            <a href="#contato" class="btn-navbar">
+
+                Planejar Viagem
+
+            </a>
+
+            <div class="menu-mobile" aria-label="Menu">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+        </nav>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="subtitle">✈ De mala e sonho</span>
+
+                <h1>Seu planejamento começa aqui — do primeiro passo ao embarque.</h1>
+
+                <p>
+
+                    Transformamos ideias em roteiros prontos para você aproveitar. Sem estresse, com suporte e detalhes pensados para você.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a class="btn-primary whatsapp" target="_blank" rel="noopener"
+                        href="">
+
+                        Falar no WhatsApp
+
+                    </a>
+
+                    <a href="#servicos" class="btn-secondary">O que fazemos</a>
+
+                </div>
+
+                <div class="hero-meta">
+
+                    <span><i class="fa-solid fa-check"></i> Planejamento completo</span>
+
+                    <span><i class="fa-solid fa-check"></i> Consultoria de roteiros</span>
+
+                    <span><i class="fa-solid fa-check"></i> Assessorias e reservas</span>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image" aria-hidden="true"></div>
+
+        </section>
+
+    </header>
+
+    <!--====================================================
+                    QUEM SOMOS / O PROJETO
+    =====================================================-->
+
+    <section id="sobre" class="about">
+
+        <div class="section-title">
+
+            <span>Quem Somos</span>
+
+            <h2>Sobre Nós</h2>
+
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image" aria-hidden="true"></div>
+
+            <div class="about-text">
+
+                <h3>
+
+                    Cada viagem começa com um sonho.
+
+                </h3>
+
+                <p>
+
+                    Na Mala & Sonho acreditamos que viajar é viver novas histórias.
+                    Nosso objetivo é transformar cada destino em uma experiência
+                    cuidadosamente planejada para que você aproveite cada momento.
+
+                </p>
+
+                <p>
+
+                    Cuidamos de todo o processo: organização, reservas,
+                    documentação, roteiro e suporte durante toda a jornada.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--====================================================
+                    SERVIÇOS
+    =====================================================-->
+
+    <section id="servicos" class="services-main">
+
+        <div class="section-title">
+
+            <span>O que fazemos</span>
+
+            <h2>Planejamento completo, com você em mente</h2>
+
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+
+                <i class="fa-solid fa-route"></i>
+
+                <h3>Roteiro sob medida</h3>
+
+                <p>Consultoria para transformar seu sonho em um itinerário realista e inesquecível.</p>
+
+            </article>
+
+            <article class="service-card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>Reservas e assessoria</h3>
+
+                <p>Planejamento de passagens, hospedagem, passeios e documentação com suporte.</p>
+
+            </article>
+
+            <article class="service-card">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <h3>Tranquilidade do começo ao fim</h3>
+
+                <p>Orientação prática para você viajar sem estresse, com detalhes pensados.</p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!--====================================================
+                    PASSO A PASSO
+    =====================================================-->
+
+    <section id="planejamento" class="timeline">
+
+        <div class="section-title">
+
+            <span>Como Funciona</span>
+
+            <h2>Sua Viagem, Nosso Planejamento</h2>
+
+        </div>
+
+        <div class="timeline-container">
+
+            <div class="step">
+
+                <span>01</span>
+
+                <h3>Contato</h3>
+
+            </div>
+
+            <div class="step">
+
+                <span>02</span>
+
+                <h3>Entendemos seu sonho</h3>
+
+            </div>
+
+            <div class="step">
+
+                <span>03</span>
+
+                <h3>Montamos seu roteiro</h3>
+
+            </div>
+
+            <div class="step">
+
+                <span>04</span>
+
+                <h3>Reservas e documentação</h3>
+
+            </div>
+
+            <div class="step">
+
+                <span>05</span>
+
+                <h3>Você embarca</h3>
+
+            </div>
+
+            <div class="step">
+
+                <span>06</span>
+
+                <h3>Você vive a experiência</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--====================================================
+                    DESTINOS / PORTFÓLIO
+    =====================================================-->
+
+    <section id="pacotes" class="packages" aria-label="Destinos e portfólio">
+
+        <div class="section-title">
+
+            <span>Destinos</span>
+
+            <h2>Roteiros que viram memórias</h2>
+
+        </div>
+
+        <div class="package-grid">
+
+            <article class="package-card praia">
+
+                <h3>Praias Paradisíacas</h3>
+
+                <p>Itinerário leve, praia por dia e finais perfeitos.</p>
+
+            </article>
+
+            <article class="package-card aventura">
+
+                <h3>Aventura</h3>
+
+                <p>Trilhas, passeios e logística organizada para você só viver.</p>
+
+            </article>
+
+            <article class="package-card cidades">
+
+                <h3>Grandes Cidades</h3>
+
+                <p>Roteiro cultural com horários inteligentes e reservas.</p>
+
+            </article>
+
+            <article class="package-card lua">
+
+                <h3>Lua de Mel</h3>
+
+                <p>Romance com detalhes, surpresas e experiência completa.</p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!--====================================================
+                    MALA PLANEJADA
+    =====================================================-->
+
+    <section class="mala">
+
+        <div class="section-title">
+
+            <span>Organização Completa</span>
+
+            <h2>Mala Planejada</h2>
+
+        </div>
+
+        <div class="mala-container">
+
+            <div class="mala-image"></div>
+
+            <div class="mala-list">
+
+                <ul>
+
+                    <li>✔ Passagens</li>
+
+                    <li>✔ Hospedagem</li>
+
+                    <li>✔ Passeios</li>
+
+                    <li>✔ Seguro Viagem</li>
+
+                    <li>✔ Transporte</li>
+
+                    <li>✔ Restaurantes</li>
+
+                    <li>✔ Roteiro Personalizado</li>
+
+                    <li>✔ Suporte Completo</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--====================================================
+                    INVESTIMENTO
+    =====================================================-->
+
+    <section id="investimento" class="pricing">
+
+        <div class="section-title">
+
+            <span>Planos</span>
+
+            <h2>Investimento</h2>
+
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+
+                <h3>Essencial</h3>
+
+                <p>Ideal para quem já possui um destino definido.</p>
+
+                <a href="https://wa.me/5511987028639?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20plano%20Essencial%20da%20Mala%20%26%20Sonho.%20J%C3%A1%20tenho%20meu%20destino%20definido%20e%20quero%20ajuda%20para%20organizar%20os%20detalhes!">Escolher</a>
+
+            </div>
+
+            <div class="price-card destaque">
+
+                <h3>Premium</h3>
+
+                <p>Planejamento completo para toda sua viagem.</p>
+
+                <a href="https://wa.me/5511987028639?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20plano%20Premium.%20Quero%20um%20planejamento%20completo%20para%20a%20minha%20pr%C3%B3xima%20viagem!">Escolher</a>
+
+            </div>
+
+            <div class="price-card">
+
+                <h3>Exclusivo</h3>
+
+                <p>Experiência totalmente personalizada.</p>
+
+                <a href="https://wa.me/5511987028639?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20Exclusivo.%20Quero%20uma%20experi%C3%AAncia%20totalmente%20personalizada%20para%20a%20minha%20viagem!">Escolher</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--====================================================
+                    FEEDBACKS
+    =====================================================-->
+
+    <section id="feedbacks" class="feedback">
+
+        <div class="section-title">
+
+            <span>Clientes</span>
+
+            <h2>Depoimentos reais</h2>
+
+        </div>
+
+        <div class="slider" aria-label="Depoimentos">
+
+
+            <figure class="testimonial">
+
+                <div class="stars">★★★★★</div>
+
+                <blockquote>
+
+                    "Foi a melhor viagem da nossa vida. Não precisamos nos preocupar com absolutamente nada."
+
+                </blockquote>
+
+                <figcaption><strong>Ana Oliveira</strong></figcaption>
+
+            </figure>
+
+            <figure class="testimonial">
+
+                <div class="stars">★★★★★</div>
+
+                <blockquote>
+
+                    "Atendimento impecável do começo ao fim."
+
+                </blockquote>
+
+                <figcaption><strong>Lucas Martins</strong></figcaption>
+
+            </figure>
+
+            <figure class="testimonial">
+
+                <div class="stars">★★★★★</div>
+
+                <blockquote>
+
+                    "Já estamos planejando nossa próxima viagem."
+
+                </blockquote>
+
+                <figcaption><strong>Fernanda Souza</strong></figcaption>
+
+            </figure>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                        CONTATO
+    =====================================================-->
+
+    <footer id="contato">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>Mala & Sonho</h2>
+
+                <p>
+
+                    Planejando sonhos, criando memórias.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Contato</h4>
+
+                <p>WhatsApp</p>
+
+                <p>Email</p>
+
+                <p>Instagram</p>
+
+            </div>
+
+            <div>
+
+                <h4>Navegação</h4>
+
+                <p>Sobre</p>
+
+                <p>Pacotes</p>
+
+                <p>Serviços</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 Mala & Sonho • Todos os direitos reservados.
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
