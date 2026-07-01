@@ -1,11 +1,11 @@
-/* ========================================================================== 
+﻿/* ========================================================================== 
    Mala & Sonho - One Page (CSS Minimalista + Elegante)
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Cores (distribuição visual sugerida) */
+  /* Cores (distribuiÃ§Ã£o visual sugerida) */
   --azul-marinho: #1F3A5F;   /* 60% */
   --off-white: #F8F6F2;      /* 25% */
   --champagne: #D8C3A5;      /* 10% */
@@ -49,12 +49,15 @@ section { padding: 76px 20px; }
 }
 
 /* ========================================================================== 
-   Background (rota + aviões)
+   Background (rota + aviÃµes)
    ========================================================================== */
 .background-map {
   position: fixed;
   inset: 0;
   background:
+    /* overlay branca translÃºcida para melhorar contraste */
+    linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.25)),
+
     linear-gradient(180deg, rgba(31,58,95,0.72), rgba(31,58,95,0.20)),
     url('img/ChatGPT Image 1 de jul. de 2026, 12_37_49.png');
   background-size: cover;
@@ -64,6 +67,7 @@ section { padding: 76px 20px; }
   pointer-events: none;
   z-index: -3;
 }
+
 
 
 .route-lines {
@@ -119,7 +123,7 @@ section { padding: 76px 20px; }
   animation: routeFly linear infinite;
 }
 
-/* Aviões aleatórios deixando rastro (traços) em movimento */
+/* AviÃµes aleatÃ³rios deixando rastro (traÃ§os) em movimento */
 .plane::after {
   content: '';
   position: absolute;
@@ -285,7 +289,7 @@ section { padding: 76px 20px; }
    Hero
    ========================================================================== */
 .hero {
-  padding-top: 96px; /* evita esconder atrás do navbar fixo */
+  padding-top: 96px; /* evita esconder atrÃ¡s do navbar fixo */
   min-height: 92vh;
   display: grid;
   align-items: center;
@@ -410,7 +414,7 @@ section { padding: 76px 20px; }
 }
 
 /* ========================================================================== 
-   Títulos
+   TÃ­tulos
    ========================================================================== */
 .section-title {
   text-align: center;
@@ -466,7 +470,8 @@ section { padding: 76px 20px; }
   border-radius: var(--raio);
   border: 1px solid rgba(31,58,95,0.10);
 
-  background-image: url('img/familia.png');
+  background-image: url('img/SOBRENOS.jpeg');
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -494,7 +499,7 @@ section { padding: 76px 20px; }
 }
 
 /* ========================================================================== 
-   Serviços
+   ServiÃ§os
    ========================================================================== */
 .services-main {
   background: rgba(31,58,95,0.02);
@@ -675,12 +680,15 @@ section { padding: 76px 20px; }
 .mala-image {
   min-height: 320px;
   border-radius: var(--raio);
-  background:
-    radial-gradient(520px 240px at 25% 20%, rgba(31,58,95,0.18), transparent 55%),
-    radial-gradient(420px 220px at 70% 70%, rgba(184,155,94,0.20), transparent 55%),
-    linear-gradient(135deg, rgba(31,58,95,0.12), rgba(216,195,165,0.14));
+  background-image: url('img/MALA.jpeg');
+
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border: 1px solid rgba(31,58,95,0.10);
 }
+
 
 .mala-list ul {
   list-style: none;
