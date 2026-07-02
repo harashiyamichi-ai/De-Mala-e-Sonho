@@ -166,7 +166,7 @@ section { padding: 76px 20px; scroll-margin-top: 96px; }
   .plane { animation: none; display: none; }
 }
 
-
+mu
 /* ========================================================================== 
    Header / Navbar
    ========================================================================== */
@@ -733,10 +733,23 @@ section { padding: 76px 20px; scroll-margin-top: 96px; }
 
 .price-card {
   background: var(--off-white);
-  border: 1px solid rgba(31,58,95,0.10);
-  border-radius: var(--raio);
+  border: 2px solid rgba(31,58,95,0.12);
+  border-radius: 12px;
   padding: 22px 18px;
   box-shadow: 0 18px 40px rgba(31,58,95,0.05);
+
+  /* Quadrado real (menor para não ficar desproporcional) */
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 260px;
+
+  display: flex;
+
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .price-card h3 { color: var(--azul-marinho); margin-bottom: 10px; }
@@ -751,12 +764,31 @@ section { padding: 76px 20px; scroll-margin-top: 96px; }
   transition: var(--transicao);
 }
 
+
 .price-card a:hover { transform: translateY(-2px); }
 
 .price-card.destaque {
   border-color: rgba(184,155,94,0.40);
   background: linear-gradient(180deg, rgba(184,155,94,0.16), rgba(248,246,242,0.9));
 }
+
+/* Ajuste apenas para garantir o layout quadrado na seção de investimento */
+#investimento .pricing-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
 
 /* ========================================================================== 
    Feedbacks
