@@ -32,31 +32,8 @@ function createPlane() {
 setInterval(createPlane, 1300);
 for (let i = 0; i < 10; i++) createPlane();
 
-// ===== Botão WhatsApp do Hero: rolar “sobre → como funciona → pacotes” =====
-(function () {
-  const btn = document.getElementById('btn-hero-whatsapp');
-  if (!btn) return;
+// ===== Botão WhatsApp do Hero =====
+// Deixamos o comportamento padrão do <a> (abrir somente o link do WhatsApp)
+// para não rolar a página inteira.
 
-  const ids = ['sobre', 'planejamento', 'pacotes'];
-
-  function scrollSequence(index) {
-    if (index >= ids.length) {
-      window.open(btn.href, '_blank', 'noopener');
-      return;
-    }
-
-    const el = document.getElementById(ids[index]);
-    if (!el) return scrollSequence(index + 1);
-
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-    // Tempo suficiente para a rolagem suave acontecer antes do próximo scroll
-    setTimeout(() => scrollSequence(index + 1), 900);
-  }
-
-  btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    scrollSequence(0);
-  });
-})();
 
