@@ -767,10 +767,12 @@ mu
 
 .price-card a:hover { transform: translateY(-2px); }
 
+/* Mantém os dois cards (destaque ou não) com a mesma cor/estilo */
 .price-card.destaque {
-  border-color: rgba(184,155,94,0.40);
-  background: linear-gradient(180deg, rgba(184,155,94,0.16), rgba(248,246,242,0.9));
+  border-color: rgba(31,58,95,0.12);
+  background: var(--off-white);
 }
+
 
 /* Ajuste apenas para garantir o layout quadrado na seção de investimento */
 #investimento .pricing-grid {
